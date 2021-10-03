@@ -47,6 +47,7 @@
 
 body{
     background-color: var(--gray-color);
+    overflow-x: hidden;
 }
 
 main > img{
