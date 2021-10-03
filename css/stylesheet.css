@@ -44,10 +44,12 @@
     src: url(../fonts/Manrope/Manrope-Regular.ttf);
 }
 
+html{
+    overflow-y: hidden;
+}
 
 body{
     background-color: var(--gray-color);
-    overflow-x: hidden;
 }
 
 main > img{
