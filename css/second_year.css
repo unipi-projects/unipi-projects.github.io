@@ -1,0 +1,50 @@
+.title-image{
+    width: 8em;
+}
+
+.card-first,
+.card-first h2,
+.card-first a{
+    background-color: #8490FA;
+    color: #41477A;
+}
+
+.card-first a:hover{
+    color: #FAF779;
+}
+
+.card-second,
+.card-second h2,
+.card-second a{
+    background-color: #FACD91;
+    color: #7A6447;
+}
+
+.card-second a:hover{
+    color: #4287AD;
+}
+
+.card-image img{
+    width: 7%;
+}
+
+@media screen and (min-width: 10em) and (max-width: 42.6em) {
+    .info-card{
+        margin: 0 .7em;
+    }
+    .title-image{
+        align-self: center;
+        width: auto;
+    }
+    .spacing div + div{
+        margin-top: 2em;
+    }
+    .card-image img{
+        width: 10%;
+    }
+
+    .card-mobile{
+        white-space: nowrap;
+        overflow: auto;
+    }
+}

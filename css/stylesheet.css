@@ -12,6 +12,7 @@
     --nav-active-text-color: #0a0a0a;
     --nav-inactive-text-color: #dddddd;;
     --hover-color: #4AFFD4;
+    --is-active: #35af93;
 }
 
 @font-face {
@@ -44,16 +45,33 @@
     src: url(../fonts/Manrope/Manrope-Regular.ttf);
 }
 
-html{
-    overflow-x: hidden;
-}
-
 body{
     background-color: var(--gray-color);
 }
 
 main > img{
     width: 50px;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-center{
+    justify-content: center;
+}
+
+.flex-dir{
+    flex-direction: row;
+}
+
+.col{
+    flex-direction: column;
+}
+
+.is-active{
+    background-color: white !important;
+    color: var(--is-active) !important;
 }
 
 .btn{
@@ -65,7 +83,8 @@ main > img{
 }
 
 .nav-item:hover{
-    background-color: var(--hover-color) !important; 
+    background-color: white !important;
+    color: var(--is-active) !important;
 }
 
 .welcome{
@@ -85,10 +104,21 @@ main > img{
     text-align: center;
     padding: 1.5em;
     border-radius: 2em;
+    max-width: 40em;
 }
 
 .info-card h2 + p{
     margin-top: 2em;
+}
+
+.info-card p{
+    font-family: "Manrope Regular";
+}
+.info-card img + a{
+    margin-left: 0.5em;
+}
+.info-card li + li{
+    margin-top: 0.5em;
 }
 
 .card-green,
@@ -118,10 +148,6 @@ main > img{
     font-family: "Manrope Bold";
 }
 
-.info-card p{
-    font-family: "Manrope Regular";
-}
-
 .title{
     font-family: "Open Sans Bold";
 }
@@ -147,20 +173,17 @@ main > img{
     margin-top: 1em;
 }
 
-.footer{
-    display: flex;
+.foot{
     background-color: white;
     margin-top: 3em;
     padding: 1em;
-    
 }
 
 .left-text{
     align-self: center;
 }
 
-.footer-images{
-    display: flex;
+.foot-images{
     width: 3em;
     margin-left: auto;
 }
@@ -169,9 +192,15 @@ main > img{
     margin-top: 1em;
 }
 
-@media screen and (min-width: 20em) and (max-width: 42.6em) {
+@media screen and (min-width: 10em) and (max-width: 42.6em) {
     .info-card{
         margin: 0 .7em;
+    }
+    .flex-dir{
+        flex-direction: column;
+    }
+    .spacing div + div{
+        margin-top: 2em;
     }
 }
 
@@ -184,5 +213,11 @@ main > img{
 @media screen and (min-width: 60em){
     .info-card{
         margin: 0 1em;
+    }
+
+    .foot{
+        background-color: white;
+        margin-top: 10.3em;
+        padding: 1em;
     }
 }
