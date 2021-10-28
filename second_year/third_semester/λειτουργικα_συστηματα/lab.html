@@ -7,7 +7,6 @@
 </head>
 <body>
 <style>
-		/* https://necolas.github.io/normalize.css/ */
 		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 		article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}
 		pre{font-family:monospace,monospace;font-size:1em}a{text-decoration: none; background-color:transparent;-webkit-text-decoration-skip:objects}
@@ -535,9 +534,28 @@
 <br class="jop-noMdConv"/>
 <div class="joplin-editable"><pre class="joplin-source" data-joplin-language="sh" data-joplin-source-open="```sh&#10;" data-joplin-source-close="&#10;```">wc `file`</pre><pre class="hljs"><code>wc `file`</code></pre></div>
 <p>Εκτυπώνει τον αριθμό των χαρακτήρων, λέξεων και γραμμών που περιέχει ένα αρχείο.</p>
+<div class="joplin-editable">
+<pre class="joplin-source" data-joplin-language="sh" data-joplin-source-open="```sh&#10;" data-joplin-source-close="&#10;```">wc -w `file`</pre><pre class="hljs"><code>wc -w `file`</code></pre>
+</div>
+<p>Εκτυπώνει τον αριθμό των λέξεων μόνο .</p>
+<div class="joplin-editable">
+<pre class="joplin-source" data-joplin-language="sh" data-joplin-source-open="```sh&#10;" data-joplin-source-close="&#10;```">wc -c `file`</pre><pre class="hljs"><code>wc -c `file`</code></pre>
+</div>
+<p>Εκτυπώνει τον αριθμό των χαρακτήρων μόνο.</p>
+
 <br class="jop-noMdConv"/>
-<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="sh" data-joplin-source-open="```sh&#10;" data-joplin-source-close="&#10;```">sort `file`</pre><pre class="hljs"><code>sort `file`</code></pre></div>
-<p>Ταξινομεί τα περιεχόμενα ενός αρχείο γραμμή γραμμή με αλφαβιτική σειρά.</p>
+<div class="joplin-editable">
+<pre class="joplin-source" data-joplin-language="sh" data-joplin-source-open="```sh&#10;" data-joplin-source-close="&#10;```">sort `file`</pre><pre class="hljs"><code>sort `file`</code>
+</pre>
+</div>
+<p>Ταξινομεί τα περιεχόμενα ενός αρχείο γραμμή γραμμή με αλφαβιτική σειρά (α -&gt; ω).</p>
+<br class="jop-noMdConv"/>
+<div class="joplin-editable">
+<pre class="joplin-source" data-joplin-language="sh" data-joplin-source-open="```sh&#10;" data-joplin-source-close="&#10;```">sort -r `file`</pre><pre class="hljs"><code>sort -r `file`</code>
+</pre>
+</div>
+<p>Ταξινομεί τα περιεχόμενα ενός αρχείο γραμμή γραμμή προς την αντίθετη κατεύθηνση.</p>
+
 <br class="jop-noMdConv"/>
 <div class="joplin-editable"><pre class="joplin-source" data-joplin-language="sh" data-joplin-source-open="```sh&#10;" data-joplin-source-close="&#10;```">mkdir `new_directory`</pre><pre class="hljs"><code>mkdir `new_directory`</code></pre></div>
 <p>Δημιουργεί έναν νέο φάκελο.</p>
@@ -591,8 +609,8 @@ g = 0
 
 o = r = 4</code></pre></div>
 <p>Άρα αν θέλαμε να δώσουμε τα δικαιώματα <code class="inline-code">-rwxrw-r--</code> στο αρχείο μας θα γράφαμε:</p>
-<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="sh" data-joplin-source-open="```sh&#10;" data-joplin-source-close="&#10;```">chmod 704 test.sh
-ls -l</pre><pre class="hljs"><code>chmod 764 test.sh
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="sh" data-joplin-source-open="```sh&#10;" data-joplin-source-close="&#10;```">chmod 764 test.sh
+ls -l</pre><pre class="hljs"><code>chmod 704 test.sh
 ls -l</code></pre></div>
 <p>Πλέον το αρχελιο μας έχει τα εξής δικαιώματα: <code class="inline-code">-rwxrw-r--</code>.</p>
 
@@ -607,6 +625,27 @@ ls -l</code></pre></div>
 <p>Μπορούμε να αποθηκεύσουμε το αποτέλεσμα από οποιοδήποτε command σε κάποιο αρχείο χρησιμοποιόντας το <code class="inline-code">&gt;</code>.</p>
 <p>Άρα για παράδειγμα αν έχουμε ένα αρχείο <code class="inline-code">test.txt</code> και μέσα έχουμε <code class="inline-code">Hello, World!</code> και τρέξουμε το command <code class="inline-code">grep -o 'Hello' test.txt &gt; result.txt</code> το πρώτο command θα βρει ότι έχουμε γράψει <code class="inline-code">Hello</code> μέσα στο αρχείο και στην συνέχεια αντί να το εκτυπώσει, το μεταφέρει και το γράφει στο αρχείο <code class="inline-code">result.txt</code>.</p>
 <p><strong>Σημείωση</strong>: Αν το αρχείο <code class="inline-code">result.txt</code> δεν υπάρχει τότε το δημιουργεί αυτόματα.</p>
+
+<br class="jop-noMdConv"/>
+<div class="joplin-editable">
+<pre class="joplin-source" data-joplin-language="sh" data-joplin-source-open="```sh&#10;" data-joplin-source-close="&#10;```">cat `file` &gt;&gt; `another_file` </pre><pre class="hljs"><code>cat `file` &gt;&gt; `another_file` </code></pre>
 </div>
+<p>Ο χαρακτήρας <code class="inline-code">&gt;&gt;</code> μας δίνει την δυνατότητα να κάνουμε <strong>append</strong> σε ένα αρχείο. Στο από πάνω παράδειγμα κάνω <code class="inline-code">cat file</code> δηλαδή <em>εκτύπωση στο terminal τα περιεχόμενα του αρχείου</em> αλλά αντί να τα εκτυπώσω απλά τα προσθέτω στο τέλος ενός άλλου αρχείου <code class="inline-code">another_file</code>.
+</p>
+<br class="jop-noMdConv"/>
+<div class="joplin-editable">
+<pre class="joplin-source" data-joplin-language="sh" data-joplin-source-open="```sh&#10;" data-joplin-source-close="&#10;```">grep -i `string` `file`</pre><pre class="hljs"><code>grep -i `string` `file`</code>
+</pre>
+</div>
+<p>Ψάχνει να βρει μέσα σε ένα αρχείο το <code class="inline-code">string</code> που του παρέχουμε αλλά χωρίς να είναι case sensitive.</p>
+<br class="jop-noMdConv"/>
+<p>Ένα από τα πιο σημαντικά commands είναι το <code class="inline-code">|</code>. Το πως λειτουργεί είναι πολύ απλό, στην ουσία παίρνει το αποτέλεσμα από ένα command και το παρέχει ως είσοδο σε ένα άλλο command.</p>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="sh" data-joplin-source-open="```sh&#10;" data-joplin-source-close="&#10;```">ls -l | sort</pre><pre class="hljs"><code>ls -l | sort</code></pre></div>
+<p>Εδώ το αποτέλεσμα από το command <code class="inline-code">ls -l</code> θα περάσει στο επόμενο command το <code class="inline-code">sort</code>.</p>
+<p>Άλλο παράδειγμα:</p>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="sh" data-joplin-source-open="```sh&#10;" data-joplin-source-close="&#10;```">grep -io &quot;hello&quot; test.txt | wc -w </pre><pre class="hljs"><code>grep -io <span class="hljs-string">&quot;hello&quot;</span> test.txt | wc -w </code></pre></div>
+<p>Εδώ βρίσκουμε όλες τις λέξεις <code class="inline-code">hello</code> που υπάρχουν στο αρχείο <code class="inline-code">test.txt</code> (είτε είναι γραμμένες με κεφαλαία είτε όχι) και απλά μετράμε πόσες βρήκαμε με το command <code class="inline-code">wc -w</code>.
+</p>
+</div> <!-- End of main div -->
 </body>
 </html>
