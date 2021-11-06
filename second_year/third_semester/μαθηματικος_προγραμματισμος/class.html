@@ -453,8 +453,11 @@
 			<li><a href="#μέθοδος-ελαχίστου-κόστους">Μέθοδος Ελαχίστου Κόστους</a></li>
 		</ul>
 		<li><a href="#πρόβλημα-ανάθεσης">Το Πρόβλημα Ανάθεσης</a></li>
+		<ul>
+			<li><a href="#προβλημα-ανάθεσης-περίπτωση-1">Ανάθεση μέγιστης απόδοσης</a></li>
+			<!-- add the second case here -->
+		</ul>
 	</ul>
-	
 </div>
 <h2 id="μέθοδος-simplex">Μέθοδος Simplex</h2>
 <p>Έστω το ακόλοθου γραμμικό πρόβλημα:</p>
@@ -1937,7 +1940,7 @@ R_2 \rightarrow R_2 - \frac{1}{2} R_2
 <p>Το πρώτο πράγμα που κάνουμε είναι να τσεκάρουμε άν ο αριθμός των Γραμμών είναι ίσος με τον αριθμό των Στηλών.</p>
 <p>Στην περίπτωση μας είναι ίσοι αφού <span class="joplin-editable"><span class="joplin-source" data-joplin-language="katex" data-joplin-source-open="$" data-joplin-source-close="$">4=4</span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">4=4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span></span></span></span></span>.</p>
 <br class="jop-noMdConv"/>
-<p>Τώρα πρέπει να βρούμε την <strong>μικρότερη αριθμιτική τιμή</strong> του πίνακα σε <strong>κάθε γραμμή</strong>.</p>
+<p>Τώρα πρέπει να βρούμε την <strong>μικρότερη αριθμητική τιμή</strong> του πίνακα σε <strong>κάθε γραμμή</strong>.</p>
 <p><img src="https://www.dropbox.com/s/bxne7dwt9kotn9g/%CE%BF%CF%85%CE%B3%CE%B3%CF%81_1.png?raw=1" alt="ουγγρικος_αλγοριθμος_1"></p>
 <p>Αφότου την βρούμε την αφαιρούμε από κάθε κελί σε εκείνη την γραμμή.</p>
 <p>Δηλαδή οι πράξεις για την πρώτη γραμμή είναι:</p>
@@ -1957,7 +1960,7 @@ R_2 \rightarrow R_2 - \frac{1}{2} R_2
 <p>Τώρα πρέπει να κάνουμε την ίδια διαδικασία για κάθε στήλη.</p>
 <p><img src="https://www.dropbox.com/s/ci2eb12kdyvdivl/%CE%BF%CF%85%CE%B3%CE%B3%CF%81_3.png?raw=1" alt="ουγγρικος_αλγοριθμος_3"></p>
 <br class="jop-noMdConv"/>
-<p>Βρήκαμε την <strong>μικρότερη αριθμιτική τιμή</strong> για <strong>κάθε στήλη</strong> και τώρα κάνουμε τις πράξεις. Ο νέος πίνακας θα είναι:</p>
+<p>Βρήκαμε την <strong>μικρότερη αριθμητική τιμή</strong> για <strong>κάθε στήλη</strong> και τώρα κάνουμε τις πράξεις. Ο νέος πίνακας θα είναι:</p>
 <p><img src="https://www.dropbox.com/s/41ixg7tgxz8pl2o/%CE%BF%CF%85%CE%B3%CE%B3%CF%81_4.png?raw=1" alt="ουγγρικος_αλγοριθμος_4"></p>
 <p>Στον πίνακα αυτό πάμε και κυκλώνουμε/πλαισιώνουμε ένα μηδενικό για κάθε γραμμή/στήλη.</p>
 <p>Δηλαδή αν πλαισιώσουμε το μηδενικό στο κελί <span class="joplin-editable"><span class="joplin-source" data-joplin-language="katex" data-joplin-source-open="$" data-joplin-source-close="$">(1,2)</span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(1,2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mclose">)</span></span></span></span></span> δεν θα μπορέσουμε να πλαισιώσουμε άλλο μηδενικό στην γραμμή <span class="joplin-editable"><span class="joplin-source" data-joplin-language="katex" data-joplin-source-open="$" data-joplin-source-close="$">1</span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span></span> ή στην στήλη <span class="joplin-editable"><span class="joplin-source" data-joplin-language="katex" data-joplin-source-open="$" data-joplin-source-close="$">2</span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span></span>.</p>
@@ -2014,7 +2017,281 @@ R_2 \rightarrow R_2 - \frac{1}{2} R_2
 <p>Το συμπέρασμα είναι ότι το πρόβλημα έχει δύο λύσεις που προφανώς βγάζουν το ίδιο αποτέλεσμα.</p>
 <p>Γενικά είναι καλό να ψάχνουμε αν το πρόβλημα έχει εναλλακτική λύση.</p>
 
-</div> 
-<!-- End of main div -->
+<div id="rendered-md"><br class="jop-noMdConv"/>
+<ul>
+<li><strong>Ειδικές περιπτώσεις στο πρόβλημα ανάθεσης</strong></li>
+</ul>
+<ol>
+<li>Να βρεθεί η ανάθεση μέγιστης απόδοσης.</li>
+<li>Γραμμές και στήλες να μην είναι ίσες.</li>
+</ol>
+<p>Ας αρχίσουμε με την πρώτη περίπτωση καθώς δεν αλλάζει σχεδόν τίποτα με όσα έχουμε ήδη κάνει.</p>
+<br class="jop-noMdConv"/>
+<div id="προβλημα-ανάθεσης-περίπτωση-1">
+<p>Έστω ότι έχουμε τον ακόλουθο πίνακα και πρέπει να βρούμε την ανάθεση μέγιστης απόδοσης:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">1</th>
+<th style="text-align:center">2</th>
+<th style="text-align:center">3</th>
+<th style="text-align:center">4</th>
+<th style="text-align:center">5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Α</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">17</td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">14</td>
+</tr>
+<tr>
+<td style="text-align:center">Β</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">14</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">15</td>
+</tr>
+<tr>
+<td style="text-align:center">Γ</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">17</td>
+<td style="text-align:center">18</td>
+</tr>
+<tr>
+<td style="text-align:center">Δ</td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">13</td>
+<td style="text-align:center">14</td>
+<td style="text-align:center">18</td>
+</tr>
+<tr>
+<td style="text-align:center">Ε</td>
+<td style="text-align:center">13</td>
+<td style="text-align:center">14</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">14</td>
+</tr>
+</tbody>
+</table>
+<p>Το πρώτο πράγμα που κάνουμε είναι να ελέγξουμε όπως και πριν αν έχουμε το πλήθος των γραμμών είναι ίσο με αυτό των στηλών.</p>
+<p>Στην δική μας περίπτωση είναι καθώς <span class="joplin-editable"><span class="joplin-source" data-joplin-language="katex" data-joplin-source-open="$" data-joplin-source-close="$">\textrm{Γραμμές} = 5</span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mtext>Γραμμ</mtext><mover accent="true"><mtext>ε</mtext><mo>ˊ</mo></mover><mtext>ς</mtext></mrow><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">\textrm{Γραμμές} = 5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord textrm">Γ</span><span class="mord">ραμμ</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord">ε</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord textrm">ˊ</span></span></span></span></span></span></span><span class="mord">ς</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">5</span></span></span></span></span> και <span class="joplin-editable"><span class="joplin-source" data-joplin-language="katex" data-joplin-source-open="$" data-joplin-source-close="$">\textrm{Στήλες} = 5</span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mtext>Στ</mtext><mover accent="true"><mtext>η</mtext><mo>ˊ</mo></mover><mtext>λες</mtext></mrow><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">\textrm{Στήλες} = 5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord textrm">Σ</span><span class="mord">τ</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord">η</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord textrm">ˊ</span></span></span></span></span></span></span><span class="mord">λες</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">5</span></span></span></span></span>.</p>
+<br class="jop-noMdConv"/>
+<p>Τώρα πρέπει να βρούμε την μέγιστη αριθμητική του πίνακα και μετά να αφαιρέσουμε τον πίνακα από αυτή, δηλαδή:</p>
+<p>Η μέγιστη αριθμητική τιμή του πίνακα είναι: <span class="joplin-editable"><span class="joplin-source" data-joplin-language="katex" data-joplin-source-open="$" data-joplin-source-close="$">\textrm{max} = 18</span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>max</mtext><mo>=</mo><mn>18</mn></mrow><annotation encoding="application/x-tex">\textrm{max} = 18</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord text"><span class="mord textrm">max</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">18</span></span></span></span></span>.</p>
+<p>Εμείς απλά πρέπει να κάνουμε την πράξη: <span class="joplin-editable"><span class="joplin-source" data-joplin-language="katex" data-joplin-source-open="$" data-joplin-source-close="$">\textrm{max} - \textrm{matrix}_{i,j}</span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>max</mtext><mo>−</mo><msub><mtext>matrix</mtext><mrow><mi>i</mi><mo separator="true">,</mo><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\textrm{max} - \textrm{matrix}_{i,j}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord text"><span class="mord textrm">max</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.9539679999999999em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord text"><span class="mord textrm">matrix</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span></span>.</p>
+<br class="jop-noMdConv"/>
+<p>Για παράδειγμα η πρώτη γραμμή μετά την από πάνω πράξη θα γίνει έτσι:</p>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="katex" data-joplin-source-open="$$&#10;" data-joplin-source-close="&#10;$$&#10;">18 - 12 = 6 \\
+18 - 17 = 1 \\
+18 - 15 = 3 \\
+18 - 16 = 2 \\
+18 - 14 = 4
+</pre><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>18</mn><mo>−</mo><mn>12</mn><mo>=</mo><mn>6</mn><mspace linebreak="newline"></mspace><mn>18</mn><mo>−</mo><mn>17</mn><mo>=</mo><mn>1</mn><mspace linebreak="newline"></mspace><mn>18</mn><mo>−</mo><mn>15</mn><mo>=</mo><mn>3</mn><mspace linebreak="newline"></mspace><mn>18</mn><mo>−</mo><mn>16</mn><mo>=</mo><mn>2</mn><mspace linebreak="newline"></mspace><mn>18</mn><mo>−</mo><mn>14</mn><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">18 - 12 = 6 \\
+18 - 17 = 1 \\
+18 - 15 = 3 \\
+18 - 16 = 2 \\
+18 - 14 = 4
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">18</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">12</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">18</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">17</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">18</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">15</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">18</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">16</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">18</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">14</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span></span></span></span></span></div>
+<br class="jop-noMdConv"/>
+<p>Οπότε ο νέος πίνακας θα είναι:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">1</th>
+<th style="text-align:center">2</th>
+<th style="text-align:center">3</th>
+<th style="text-align:center">4</th>
+<th style="text-align:center">5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Α</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">4</td>
+</tr>
+<tr>
+<td style="text-align:center">Β</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">3</td>
+</tr>
+<tr>
+<td style="text-align:center">Γ</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">Δ</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">Ε</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">4</td>
+</tr>
+</tbody>
+</table>
+<br class="jop-noMdConv"/>
+<p>Από εδώ και πέρα η διαδικασία είναι ακριβώς η ίδια με το προηγούμενο παράδειγμα που λύσαμε, δηλαδή:</p>
+<p>Βρίσκουμε την <strong>μικρότερη αριθμητική τιμή</strong> του πίνακα σε <strong>κάθε γραμμή</strong> και μετά την αφαιρούμε από την αντίστοιχη γραμμή.</p>
+<p><img src="https://www.dropbox.com/s/mr5ytpab9u0mrul/%CE%BF%CF%85%CE%B3%CE%B3%CF%81_1.png?raw=1" alt="περίπτωση_1_ουγγρικός_αλγόριθμος_1"></p>
+<br class="jop-noMdConv"/>
+<p>Δηλαδή οι πράξεις για την πρώτη γραμμή είναι:</p>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="katex" data-joplin-source-open="$$&#10;" data-joplin-source-close="&#10;$$&#10;">6 - 1 = 5 \\
+1 - 1 = 0 \\
+3 - 1 = 2 \\
+2 - 1 = 1 \\
+4 - 1 = 3
+</pre><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>6</mn><mo>−</mo><mn>1</mn><mo>=</mo><mn>5</mn><mspace linebreak="newline"></mspace><mn>1</mn><mo>−</mo><mn>1</mn><mo>=</mo><mn>0</mn><mspace linebreak="newline"></mspace><mn>3</mn><mo>−</mo><mn>1</mn><mo>=</mo><mn>2</mn><mspace linebreak="newline"></mspace><mn>2</mn><mo>−</mo><mn>1</mn><mo>=</mo><mn>1</mn><mspace linebreak="newline"></mspace><mn>4</mn><mo>−</mo><mn>1</mn><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">6 - 1 = 5 \\
+1 - 1 = 0 \\
+3 - 1 = 2 \\
+2 - 1 = 1 \\
+4 - 1 = 3
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">6</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">5</span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">4</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span></span></span></span></span></div>
+<p>Και ο νέος πίνακας θα είναι αυτός:</p>
+<p><img src="https://www.dropbox.com/s/brkauoar52tt5t3/%CE%BF%CF%85%CE%B3%CE%B3%CF%81_2.png?raw=1" alt="περίπτωση_1_ουγγρικός_αλγόριθμος_2"></p>
+<br class="jop-noMdConv"/>
+<p>Τώρα πρέπει να κάνουμε την ίδια διαδικασία για <strong>κάθε στήλη</strong> του πίνακα:</p>
+<p><img src="https://www.dropbox.com/s/07iy9vau1cmoero/%CE%BF%CF%85%CE%B3%CE%B3%CF%81_3.png?raw=1" alt="περίπτωση_1_ουγγρικός_αλγόριθμος_3"></p>
+<br class="jop-noMdConv"/>
+<p>Κάνουμε τις πράξεις και δημιουργούμε τον καινούριο πίνακα:</p>
+<p><img src="https://www.dropbox.com/s/iv7q35qho2sz1w8/%CE%BF%CF%85%CE%B3%CE%B3%CF%81_4.png?raw=1" alt="περίπτωση_1_ουγγρικός_αλγόριθμος_4"></p>
+<br class="jop-noMdConv"/>
+<p>Σε αυτόν τον πίνακα πάμε και κυκλώνουμε/πλαισιώνουμε ένα μηδενικό για κάθε γραμμή/στήλη.</p>
+<p>Δηλαδή αν πλαισιώσουμε το μηδενικό στο κελί <span class="joplin-editable"><span class="joplin-source" data-joplin-language="katex" data-joplin-source-open="$" data-joplin-source-close="$">(3,1)</span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>3</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(3,1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span> δεν θα μπορέσουμε να πλαισιώσουμε άλλο μηδενικό στην γραμμή <span class="joplin-editable"><span class="joplin-source" data-joplin-language="katex" data-joplin-source-open="$" data-joplin-source-close="$">3</span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span></span></span></span></span> ή στην στήλη <span class="joplin-editable"><span class="joplin-source" data-joplin-language="katex" data-joplin-source-open="$" data-joplin-source-close="$">1</span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span></span>.</p>
+<p>Επιλέγουμε τα μηδενικά έτσι ώστε να ισχύει:</p>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="katex" data-joplin-source-open="$$&#10;" data-joplin-source-close="&#10;$$&#10;">\textrm{Πλήθος Πλαισιωμένων Μηδενικών = Πλήθος Γραμμών}
+</pre><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Πλ</mtext><mover accent="true"><mtext>η</mtext><mo>ˊ</mo></mover><mtext>θος Πλαισιωμ</mtext><mover accent="true"><mtext>ε</mtext><mo>ˊ</mo></mover><mtext>νων Μηδενικ</mtext><mover accent="true"><mtext>ω</mtext><mo>ˊ</mo></mover><mtext>ν = Πλ</mtext><mover accent="true"><mtext>η</mtext><mo>ˊ</mo></mover><mtext>θος Γραμμ</mtext><mover accent="true"><mtext>ω</mtext><mo>ˊ</mo></mover><mtext>ν</mtext></mrow><annotation encoding="application/x-tex">\textrm{Πλήθος Πλαισιωμένων Μηδενικών = Πλήθος Γραμμών}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord textrm">Π</span><span class="mord">λ</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord">η</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord textrm">ˊ</span></span></span></span></span></span></span><span class="mord">θος</span><span class="mord textrm"> Π</span><span class="mord">λαισιωμ</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord">ε</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord textrm">ˊ</span></span></span></span></span></span></span><span class="mord">νων</span><span class="mord textrm"> </span><span class="mord">Μηδενικ</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord">ω</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord textrm">ˊ</span></span></span></span></span></span></span><span class="mord">ν</span><span class="mord textrm"> = Π</span><span class="mord">λ</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord">η</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord textrm">ˊ</span></span></span></span></span></span></span><span class="mord">θος</span><span class="mord textrm"> Γ</span><span class="mord">ραμμ</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord">ω</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord textrm">ˊ</span></span></span></span></span></span></span><span class="mord">ν</span></span></span></span></span></span></div>
+<p>Αν ισχύει το από πάνω σταματάμε, αν όμως βρούμε μικρότερο αριθμό πλαισιωμένων μηδενικών συνεχίζουμε.</p>
+<br class="jop-noMdConv"/>
+<p>Στην περίπτωση μας όμως έχουμε:</p>
+<p><img src="https://www.dropbox.com/s/oqmpv78767p6xii/%CE%BF%CF%85%CE%B3%CE%B3%CF%81_5.png?raw=1" alt="περίπτωση_1_ουγγρικός_αλγόριθμος_5"></p>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="katex" data-joplin-source-open="$$&#10;" data-joplin-source-close="&#10;$$&#10;">\textrm{Πλήθος Πλαισιωμένων Μηδενικών} = 4
+</pre><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mtext>Πλ</mtext><mover accent="true"><mtext>η</mtext><mo>ˊ</mo></mover><mtext>θος Πλαισιωμ</mtext><mover accent="true"><mtext>ε</mtext><mo>ˊ</mo></mover><mtext>νων Μηδενικ</mtext><mover accent="true"><mtext>ω</mtext><mo>ˊ</mo></mover><mtext>ν</mtext></mrow><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\textrm{Πλήθος Πλαισιωμένων Μηδενικών} = 4
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord textrm">Π</span><span class="mord">λ</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord">η</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord textrm">ˊ</span></span></span></span></span></span></span><span class="mord">θος</span><span class="mord textrm"> Π</span><span class="mord">λαισιωμ</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord">ε</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord textrm">ˊ</span></span></span></span></span></span></span><span class="mord">νων</span><span class="mord textrm"> </span><span class="mord">Μηδενικ</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord">ω</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord textrm">ˊ</span></span></span></span></span></span></span><span class="mord">ν</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span></span></span></span></span></div>
+<p>Αυτό που πρέπει να κάνουμε είναι περάσουμε με γραμμές τον πίνακα έτσι ώστε να έχουμε καλύψει όλα τα μηδενικά του πίνακα (με όσο το δυνατόν λιγότερες γραμμές γίνεται).</p>
+<br class="jop-noMdConv"/>
+<p><img src="https://www.dropbox.com/s/ponw54v0agwdwgh/%CE%BF%CF%85%CE%B3%CE%B3%CF%81_6.png?raw=1" alt="περίπτωση_1_ουγγρικός_αλγόριθμος_6"></p>
+<p>Καλύψαμε λοιπόν όλα τα μηδενικά του πίνακα και ο αριθμός των γραμμών που χρειαστήκαμε είναι <span class="joplin-editable"><span class="joplin-source" data-joplin-language="katex" data-joplin-source-open="$" data-joplin-source-close="$">4</span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn></mrow><annotation encoding="application/x-tex">4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span></span></span></span></span>.</p>
+<p>Τώρα αυτό που πρέπει να κάνουμε είναι να βρούμε το μικρότερο στοιχείο από τα μη καλυμμένα στοιχεία του πίνακα.</p>
+<br class="jop-noMdConv"/>
+<p>Στην περίπτωση μας είναι ο αριθμός <span class="joplin-editable"><span class="joplin-source" data-joplin-language="katex" data-joplin-source-open="$" data-joplin-source-close="$">1</span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span></span>. Αφότου τον βρούμε απλά τον αφαιρούμε από όλα τα μη καλυμμένα στοιχεία και τον προσθέτουμε στα διπλά καλυμμένα στοιχεία του πίνακα.</p>
+<p><img src="https://www.dropbox.com/s/wx1s2uwbx3knk5o/%CE%BF%CF%85%CE%B3%CE%B3%CF%81_7.png?raw=1" alt="περίπτωση_1_ουγγρικός_αλγόριθμος_7"></p>
+<p><strong>Σημείωση</strong>: Με <strong>μπλε</strong> είναι τα μη καλυμμένα στοιχεία ενώ με <strong>πορτοκαλί</strong> είναι τα διπλά καλυμμένα στοιχεία.</p>
+<br class="jop-noMdConv"/>
+<p>Δηλαδή ο πίνακας μας θα είναι ο εξής μετά τις πράξεις:</p>
+<p><img src="https://www.dropbox.com/s/g12bj3dk9cemh96/%CE%BF%CF%85%CE%B3%CE%B3%CF%81_8.png?raw=1" alt="περίπτωση_1_ουγγρικός_αλγόριθμος_8"></p>
+<p>Τώρα επαναλαμβάνουμε την διαδικασία των πλαισιωμένων μηδενικών.</p>
+<br class="jop-noMdConv"/>
+<p>Οπότε θα έχουμε τον ακόλουθο πίνακα:</p>
+<p><img src="https://www.dropbox.com/s/5b6x9gwjuzt6tf9/%CE%BF%CF%85%CE%B3%CE%B3%CF%81_9.png?raw=1" alt="περίπτωση_1_ουγγρικός_αλγόριθμος_9"></p>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="katex" data-joplin-source-open="$$&#10;" data-joplin-source-close="&#10;$$&#10;">\textrm{Πλήθος Πλαισιωμένων Μηδενικών} = \textrm{Πλήθος Πλαισιωμένων Μηδενικών} = 5 
+</pre><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mtext>Πλ</mtext><mover accent="true"><mtext>η</mtext><mo>ˊ</mo></mover><mtext>θος Πλαισιωμ</mtext><mover accent="true"><mtext>ε</mtext><mo>ˊ</mo></mover><mtext>νων Μηδενικ</mtext><mover accent="true"><mtext>ω</mtext><mo>ˊ</mo></mover><mtext>ν</mtext></mrow><mo>=</mo><mrow><mtext>Πλ</mtext><mover accent="true"><mtext>η</mtext><mo>ˊ</mo></mover><mtext>θος Πλαισιωμ</mtext><mover accent="true"><mtext>ε</mtext><mo>ˊ</mo></mover><mtext>νων Μηδενικ</mtext><mover accent="true"><mtext>ω</mtext><mo>ˊ</mo></mover><mtext>ν</mtext></mrow><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">\textrm{Πλήθος Πλαισιωμένων Μηδενικών} = \textrm{Πλήθος Πλαισιωμένων Μηδενικών} = 5 
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord textrm">Π</span><span class="mord">λ</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord">η</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord textrm">ˊ</span></span></span></span></span></span></span><span class="mord">θος</span><span class="mord textrm"> Π</span><span class="mord">λαισιωμ</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord">ε</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord textrm">ˊ</span></span></span></span></span></span></span><span class="mord">νων</span><span class="mord textrm"> </span><span class="mord">Μηδενικ</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord">ω</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord textrm">ˊ</span></span></span></span></span></span></span><span class="mord">ν</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord textrm">Π</span><span class="mord">λ</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord">η</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord textrm">ˊ</span></span></span></span></span></span></span><span class="mord">θος</span><span class="mord textrm"> Π</span><span class="mord">λαισιωμ</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord">ε</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord textrm">ˊ</span></span></span></span></span></span></span><span class="mord">νων</span><span class="mord textrm"> </span><span class="mord">Μηδενικ</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord">ω</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord textrm">ˊ</span></span></span></span></span></span></span><span class="mord">ν</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">5</span></span></span></span></span></div>
+<br class="jop-noMdConv"/>
+<p>Οπότε τώρα κάνουμε την διαδικασία όπου μηδενίζουμε όλα τα στοιχεία του πίνακα εκτός από τα πλαισωμένα μηδενικά τα οποία γίνονται <span class="joplin-editable"><span class="joplin-source" data-joplin-language="katex" data-joplin-source-open="$" data-joplin-source-close="$">1</span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span></span>.</p>
+<p>Πάω στο επόμενο βήμα κατευθέιαν (κανονικά όμως πρέπει να φαίνεται).</p>
+<p>Το αποτέλεσμα είναι:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">1</th>
+<th style="text-align:center">2</th>
+<th style="text-align:center">3</th>
+<th style="text-align:center">4</th>
+<th style="text-align:center">5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Α</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">17</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">Β</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">15</td>
+</tr>
+<tr>
+<td style="text-align:center">Γ</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">Δ</td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">Ε</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">0</td>
+</tr>
+</tbody>
+</table>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="katex" data-joplin-source-open="$$&#10;" data-joplin-source-close="&#10;$$&#10;">Α = 17 \\
+Β = 15 \\
+Γ = 16 \\
+Δ = 15 \\
+Ε = 18
+</pre><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">A</mi><mo>=</mo><mn>17</mn><mspace linebreak="newline"></mspace><mi mathvariant="normal">B</mi><mo>=</mo><mn>15</mn><mspace linebreak="newline"></mspace><mi mathvariant="normal">Γ</mi><mo>=</mo><mn>16</mn><mspace linebreak="newline"></mspace><mi mathvariant="normal">Δ</mi><mo>=</mo><mn>15</mn><mspace linebreak="newline"></mspace><mi mathvariant="normal">E</mi><mo>=</mo><mn>18</mn></mrow><annotation encoding="application/x-tex">Α = 17 \\
+Β = 15 \\
+Γ = 16 \\
+Δ = 15 \\
+Ε = 18
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">A</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">17</span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">B</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">15</span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Γ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">16</span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Δ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">15</span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">E</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">18</span></span></span></span></span></div>
+<p>Και το συνολικό κόστος είναι:</p>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="katex" data-joplin-source-open="$$&#10;" data-joplin-source-close="&#10;$$&#10;">z = Α + Β + Γ + Δ + Ε = 17 + 15 + 16 + 15 + 18 = 81
+</pre><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>z</mi><mo>=</mo><mi mathvariant="normal">A</mi><mo>+</mo><mi mathvariant="normal">B</mi><mo>+</mo><mi mathvariant="normal">Γ</mi><mo>+</mo><mi mathvariant="normal">Δ</mi><mo>+</mo><mi mathvariant="normal">E</mi><mo>=</mo><mn>17</mn><mo>+</mo><mn>15</mn><mo>+</mo><mn>16</mn><mo>+</mo><mn>15</mn><mo>+</mo><mn>18</mn><mo>=</mo><mn>81</mn></mrow><annotation encoding="application/x-tex">z = Α + Β + Γ + Δ + Ε = 17 + 15 + 16 + 15 + 18 = 81
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord">A</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord">B</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord">Γ</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord">Δ</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">E</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">17</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">15</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">16</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">15</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">18</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">81</span></span></span></span></span></div>
+<br class="jop-noMdConv"/>
+</div>
+
+</div> <!-- End of main div -->
 </body>
 </html>
