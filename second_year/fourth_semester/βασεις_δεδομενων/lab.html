@@ -430,6 +430,7 @@
 		<div style="margin-left: auto;"><a href="theory.html">Theory Notes&rarr;</a></div>
 	</div>
 </header>
+
 <div style="text-align: center; font-size: 2em; margin-bottom: 1em; line-height: 1.2em;">Βάσεις Δεδομένων [SQL]</div>
 <div style="padding: 1em;">
 <div id="rendered-md"><h1 id="lab-notes">Lab Notes</h1>
@@ -437,7 +438,7 @@
 <h3 id="windows">Windows</h3>
 <ol>
 <li><a data-from-md title='https://www.enterprisedb.com/downloads/postgres-postgresql-downloads' href='https://www.enterprisedb.com/downloads/postgres-postgresql-downloads'>Download PostgreSQL for Windows</a></li>
-<li><a data-from-md title='https://www.pgadmin.org/download/pgadmin-4-windows/' href='https://www.pgadmin.org/download/pgadmin-4-windows/'>Download pgAdmin for Windows</a></li>
+<li><a data-from-md title='https://www.pgadmin.org/download/pgadmin-4-windows/' href='https://www.pgadmin.org/download/pgadmin-4-windows/'>Download pgAdmin4 for Windows</a></li>
 </ol>
 <h3 id="macos">MacOS</h3>
 <ol>
@@ -475,7 +476,12 @@ sudo apt-<span class="hljs-built_in">get</span> install postgresql-XX</code></pr
 <p><strong>Σημείωση</strong>: Στο τελευταίο command όπου XX βάζουμε όποια έκδοση της PostgreSQL θέλουμε να κατεβάσουμε.</p>
 </li>
 <li>
-<p><a data-from-md title='https://www.pgadmin.org/download/pgadmin-4-apt/' href='https://www.pgadmin.org/download/pgadmin-4-apt/'>Download pgAdmin for Debian based distros</a></p>
+<p>Download pgAdmin4 for Debian based distros using apt:</p>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="sh" data-joplin-source-open="```sh&#10;" data-joplin-source-close="&#10;```">sudo curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
+sudo sh -c 'echo &quot;deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main&quot; &gt; /etc/apt/sources.list.d/pgadmin4.list &amp;&amp; apt update'
+sudo apt-get install pgadmin4</pre><pre class="hljs"><code>sudo curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
+sudo sh -c <span class="hljs-string">&#x27;echo &quot;deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main&quot; &gt; /etc/apt/sources.list.d/pgadmin4.list &amp;&amp; apt update&#x27;</span>
+sudo apt-get install pgadmin4</code></pre></div>
 </li>
 </ol>
 <ul>
@@ -501,8 +507,7 @@ sudo apt-<span class="hljs-built_in">get</span> install postgresql-XX</code></pr
 <li><a data-from-md title='https://www.gnu.org/software/emacs/' href='https://www.gnu.org/software/emacs/'>Emacs</a> [Windows/MacOS/Linux]</li>
 <li><a data-from-md title='https://notepad-plus-plus.org/' href='https://notepad-plus-plus.org/'>Notepad++</a> [Windows]</li>
 </ol>
-<p><strong>Σημείωση</strong>: Αφήνω αυτές τις επιλογές καθώς μπορείται να φτιάχνεται τα σκριπτάκια σας σε ένα από τα παραπάνω Text Editors και μετά απλά να τα τρέχεται μέσω του <em>pgAdmin</em>. </br>
-Επίσης στην τελική εργασία θα πρέπει να χρησιμοποιήσεται <em>C++</em> ή <em>Java</em> ή <em>Python</em> ή γενικά όποια γλώσσα σας βολέψει για να κάνεται σύνδεση με την βάση σας, οπότε ένα Text Editor θα χρειαστεί.</p>
+<p><strong>Σημείωση</strong>: Αφήνω αυτές τις επιλογές καθώς μπορείται να φτιάχνεται τα σκριπτάκια σας σε ένα από τα παραπάνω Text Editors και μετά απλά να τα τρέχεται μέσω του <em>pgAdmin</em>. Επίσης στην τελική εργασία θα πρέπει να χρησιμοποιήσεται <em>C++</em> ή <em>Java</em> ή <em>Python</em> ή γενικά όποια γλώσσα σας βολέψει για να κάνεται σύνδεση με την βάση σας, οπότε ένα Text Editor θα χρειαστεί.</p>
 <h2 id="websites">Websites</h2>
 <h3 id="για-τις-εργασίες">Για τις εργασίες</h3>
 <ul>
@@ -516,6 +521,7 @@ sudo apt-<span class="hljs-built_in">get</span> install postgresql-XX</code></pr
 <h2 id="videos">Videos</h2>
 <h3 id="για-τις-εργασίες-2">Για τις εργασίες</h3>
 <p>Δεν χρειάζεται κάποιο βίντεο tutorial για τις απαιτήσεις των εργασιών.</p>
+</div>
 </div>
 </body>
 </html>
