@@ -1,0 +1,24 @@
+ html a{
+    text-decoration: none !important;
+}
+
+.mermaid { background-color: white; width: 640px; }
+.hljs{
+	background-color: rgb(245, 245, 245) !important;
+}
+
+.main-pad{
+    padding: 1em !important;
+}
+
+@media screen and (min-width: 65em) {
+	img{
+		max-width: 60%;
+	}
+}
+
+@media screen and (min-width: 65.5em) {
+	img{
+		max-width: 20%;
+	}
+}
