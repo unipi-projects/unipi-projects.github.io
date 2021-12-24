@@ -646,6 +646,30 @@ ls -l</code></pre></div>
 <div class="joplin-editable"><pre class="joplin-source" data-joplin-language="sh" data-joplin-source-open="```sh&#10;" data-joplin-source-close="&#10;```">grep -io &quot;hello&quot; test.txt | wc -w </pre><pre class="hljs"><code>grep -io <span class="hljs-string">&quot;hello&quot;</span> test.txt | wc -w </code></pre></div>
 <p>Εδώ βρίσκουμε όλες τις λέξεις <code class="inline-code">hello</code> που υπάρχουν στο αρχείο <code class="inline-code">test.txt</code> (είτε είναι γραμμένες με κεφαλαία είτε όχι) και απλά μετράμε πόσες βρήκαμε με το command <code class="inline-code">wc -w</code>.
 </p>
+
+<h2 id="εφαρμογή-εντολών" style="margin-top: 4em;">Εφαρμογή Εντολών</h2>
+<ol>
+<li>Είμαστε στο <strong>Home</strong> directory και χωρίς να μετακινηθούμε από αυτόν πρέπει να δημιουργήσουμε δύο <em>φακέλους</em> (test, other) καθώς και τα <em>αρχεία</em> (012, 021, 120, 102, 201, 210).</li>
+</ol>
+<p><strong>Λύση</strong></p>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="sh" data-joplin-source-open="```sh&#10;" data-joplin-source-close="&#10;```">mkdir test other &amp;&amp; touch test/{012,021,120,102,201,210}.txt</pre><pre class="hljs"><code>mkdir <span class="hljs-built_in">test</span> other &amp;&amp; touch <span class="hljs-built_in">test</span>/{012,021,120,102,201,210}.txt</code></pre></div>
+<br class="jop-noMdConv"/>
+<details style="cursor: pointer" class="jop-noMdConv">
+&Tab; <summary class="jop-noMdConv">Screenshots for Help Here</summary>
+&Tab; <br class="jop-noMdConv"/>
+&Tab;
+<pre><code>1. Το Home πριν να τρέξουμε το command.
+</code></pre>
+&Tab; <img src="https://www.dropbox.com/s/onrazpenqdisij3/before_command.png?raw=1" alt="home directory before running the command above" width="100%" class="jop-noMdConv"/>
+<pre><code>2. Το Home directory μας αφότου τρέξουμε το command.
+</code></pre>
+   <img src="https://www.dropbox.com/s/aq437j9xg03x5ua/home_after_command.png?raw=1" alt="home directory after running the command above " width="100%" class="jop-noMdConv"/>
+<pre><code>3. Ο φάκελος test που περιέχει όλα τα αρχεία txt που θέλουμε.
+</code></pre>
+   <img src="https://www.dropbox.com/s/b1o5jwq8f1lzymu/new_folder_after_command.png?raw=1" alt="the newly created folder and what it contains" width="100%" class="jop-noMdConv"/>
+</details>
+			
+
 </div> <!-- End of main div -->
 </body>
 </html>
