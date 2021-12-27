@@ -703,6 +703,45 @@ z = 7 mod 3 = 1<br>
 </details></li>
 </ol>
 
+<br class="jop-noMdConv"/>
+
+<ol start="3">
+<li>
+<p>Υπολογίστε τα xyz κάνοντας τις εξείς πράξεις (x = Γ mod 8), (y = Δ mod 8) και (z = Ε mod 8), όπου Γ Δ Ε τα τρία τελευταία ψηφία του ΑΜ σας. Στην συνέχεια χωρίς να μετακινηθήτε από το <strong>Home</strong> directory εκτελέστε την εντολή <code class="inline-code">chmod xyz ~/test/012.txt</code> (χωρίς όμως να χρησιμοποιήσετε αριθμητικές τιμές).</p>
+<br class="jop-noMdConv"/>
+<p><strong>Λύση</strong></p>
+<p>Έστω ότι Γ = 1, Δ = 9, Ε = 5.</p>
+<br class="jop-noMdConv"/>
+<p>x = 1 mod 8 = 1<br>
+y = 9 mod 8 = 1<br>
+z = 5 mod 8 = 5</p>
+<br class="jop-noMdConv"/>
+<p>Άρα πρέπει να αλλάξουμε τα δικαιώματα του αρχείου <em>012</em> στις <strong>115</strong>.</p>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="sh" data-joplin-source-open="```sh&#10;" data-joplin-source-close="&#10;```">chmod u=x,g=x,o=rx test/012.txt</pre><pre class="hljs"><code>chmod u=x,g=x,o=rx <span class="hljs-built_in">test</span>/012.txt</code></pre></div>
+<br class="jop-noMdConv"/>
+<div style="padding-right: 1.2em;">
+<p><strong>Επεξήγηση</strong></p>
+<p>Εφόσον δεν πρέπει να χρησιμοποιήσουμε τις αριθμητικές τιμές για να αλλάξουμε τα δικαιώματα του αρχείου <em>012</em> πρέπει να χρησιμοποιήσουμε τους χαρακτήρες <code class="inline-code">r w x</code>. Γνωρίζουμε ότι <code class="inline-code">r = 4</code>, <code class="inline-code">w = 2</code> και <code class="inline-code">x = 1</code>. Οπότε το μόνο που μένει είναι να βρούμε τον σωστό συνδυασμό χαρακτήρων ώστε να φτιάξουμε τα δικαιώματα του αρχείου.<br>
+Εφόσον πρέπει να έχουμε <code class="inline-code">115</code> σημαίνει ότι έχουμε <code class="inline-code">u=1,g=1,o=5</code> άρα με χαρακτήρες έχουμε: <code class="inline-code">u=x,g=x,o=rx</code>. Το <code class="inline-code">u</code> και το <code class="inline-code">g</code> νομίζω είναι πολύ απλά να τα καταλάβουμε, το <code class="inline-code">o</code> όμως είναι συνδυασμός του <code class="inline-code">r</code> και του <code class="inline-code">x</code> αυτό γιατί <code class="inline-code">r = 4</code>  και <code class="inline-code">x = 1</code> οπότε για να φτιάξουμε το <code class="inline-code">5</code> χρησιμοποιούμε και τα δύο.</p></div>
+<br class="jop-noMdConv"/>
+<details style="cursor: pointer" class="jop-noMdConv">
+&Tab; <summary class="jop-noMdConv">Screenshots Here</summary>
+&Tab; <br class="jop-noMdConv"/>
+&Tab;<pre><code>1. Τα δικαιώματα του αρχείου 012.txt πριν να τρέξουμε το command.</code></pre>
+&Tab; <img src="https://www.dropbox.com/s/g1m1a2k1hyier37/before_chmod.png?raw=1" alt="permissions of 012.txt before executing the above command" width="100%" class="jop-noMdConv"/>
+<pre><code>2. Το command που πρέπει να τρέξουμε.</code></pre>
+	<img src="https://www.dropbox.com/s/aosl43op9qr33x4/chmod_command.png?raw=1" alt="executing the above command " width="100%" class="jop-noMdConv"/>
+<pre><code>3. Τα δικαιώματα του αρχείου 012.txt μετά την εκτέλεση του command (και εμφάνιση του με αριθμούς αν σας μπερδεύουν οι χαρακτήρες).
+</code></pre>
+	<img src="https://www.dropbox.com/s/rlhzs922q5wgp2d/after_chmod_chars.png?raw=1" alt="permissions of 012.txt after executing the above command" width="100%" class="jop-noMdConv"/>
+&Tab;<br class="jop-noMdConv"/>
+	&Tab;<img src="https://www.dropbox.com/s/3rdbfw5f9mm5vfy/after_chmod_nums.png?raw=1" alt="permissions of 012.txt after executing the above command in numbers" width="100%" class="jop-noMdConv"/>
+</details>
+</li>
+</ol>
+	
+<br class="jop-noMdConv"/>
+	
 
 
 </div> <!-- End of main div -->
