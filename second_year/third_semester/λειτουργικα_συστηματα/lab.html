@@ -683,7 +683,7 @@ y = 6 mod 3 = 0<br>
 z = 7 mod 3 = 1<br>
 <br class="jop-noMdConv"/><br>
 Άρα πρέπει να αντιγράψουμε μόνο τα αρχεία: <strong>201</strong>, <strong>210</strong> και <strong>021</strong></p>
-<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="sh" data-joplin-source-open="```sh&#10;" data-joplin-source-close="&#10;```">cp test/[02]?[01].txt other/</pre><pre class="hljs"><code>cp <span class="hljs-built_in">test</span>/[02]?[0-1].txt other/</code></pre></div>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="sh" data-joplin-source-open="```sh&#10;" data-joplin-source-close="&#10;```">cp test/[02]?[01].txt other/</pre><pre class="hljs"><code>cp <span class="hljs-built_in">test</span>/[02]?[01].txt other/</code></pre></div>
 <br class="jop-noMdConv"/>
 <p><strong>Επεξήγηση</strong></p>
 <p>Πρέπει να αντιγράψουμε τα αρχεία 201, 210 και 021. Παρατηρούμε ότι όλα τα αρχεία ξεκινάνε είτε με το ψηφίο <em>2</em> είτε με το ψηφίο <em>0</em>. Γι αυτό λέμε <em>[02]</em> δηλαδή περιλαμβάνουμε ότι αρχίζει είτε με <em>2</em> είτε με <em>0</em>. Μετά έχουμε βάλει τον χαρακτήρα <em>?</em> το οποίο σημαίνει ότι εκεί μπορεί να υπάρχει οποιοσδήποτε χαρακτήρας. Όντως αμα παρατηρήσουμε τα αρχεία που πρέπει να αντιγράψουμε, σαν δεύτερο ψηφίο υπάρχουν όλοι οι πιθανοί αριθμοί (0, 1, 2) άρα δεν μας νοιάζει να έχουμε κάποιο συγκεκριμένο ψηφίο σε αυτή την θέση. Τέλος βάλαμε <em>[01]</em> και αυτό γιατί πολύ απλά το τελευταίο ψηφίο και στα τρία αρχεία είτε είναι <em>0</em> είτε είναι <em>1</em>.<br>
